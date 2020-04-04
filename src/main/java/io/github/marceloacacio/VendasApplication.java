@@ -18,24 +18,24 @@ public class VendasApplication {
     //@Qualifier("applicationName")
     //private String applicationName;
 
-    @Cachorro
-    private Animal animal;
+//    @Cachorro
+//    private Animal animal;
+//
+//    @Bean(name = "executarAnimal")
+//    public CommandLineRunner executar(){
+//        return args -> {
+//            this.animal.fazerBarulho();
+//        };
+//    }
 
-    @Bean(name = "executarAnimal")
-    public CommandLineRunner executar(){
-        return args -> {
-            this.animal.fazerBarulho();
-        };
-    }
 
-
-    @Value("${application.name}")
-    private String applicationName;
-
-    @GetMapping("/hello")
-    public String helloWorld(){
-        return applicationName;
-    }
+//    @Value("${application.name}")
+//    private String applicationName;
+//
+//    @GetMapping("/hello")
+//    public String helloWorld(){
+//        return applicationName;
+//    }
 
     public static void main(String[] args) {
         SpringApplication.run(VendasApplication.class,args);
