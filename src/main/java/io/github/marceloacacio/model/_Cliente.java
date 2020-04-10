@@ -1,6 +1,6 @@
 package io.github.marceloacacio.model;
 
-public class Cliente {
+public class _Cliente {
     private String nome;
 
     public String getNome() {
