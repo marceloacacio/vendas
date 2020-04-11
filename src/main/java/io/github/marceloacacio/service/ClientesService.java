@@ -11,12 +11,12 @@ public class ClientesService {
     @Autowired
     private ClientesRepository repository;
 
-    public void salvarCliente(_Cliente cliente){
-        validarCliente(cliente);
-        this.repository.persistir(cliente);
-    }
-
-    public void validarCliente(_Cliente cliente){
-        //Aplica validações
-    }
+//    public void salvarCliente(_Cliente cliente){
+//        validarCliente(cliente);
+//        this.repository.persistir(cliente);
+//    }
+//
+//    public void validarCliente(_Cliente cliente){
+//        //Aplica validações
+//    }
 }
