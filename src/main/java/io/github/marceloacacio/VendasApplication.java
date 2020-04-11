@@ -31,29 +31,29 @@ public class VendasApplication {
              List<Cliente> todosClientes = clientesRepository.obterTodos();
              todosClientes.forEach(System.out::println);
 
-             System.out.println("Atualizando todos os clientes");
-             todosClientes.forEach(c -> {
-                 c.setNome(c.getNome()+" Atualizado");
-                 clientesRepository.atualizar(c);
-             });
-
-             todosClientes = clientesRepository.obterTodos();
-             todosClientes.forEach(System.out::println);
-
-             System.out.println("Buscando cliente por nome");
-             clientesRepository.buscarPorNome("cli").forEach(System.out::println);
-
-             System.out.println("Deletar clientes");
-             clientesRepository.obterTodos().forEach(c -> {
-                 clientesRepository.deletar(c);
-             });
-
-             todosClientes = clientesRepository.obterTodos();
-             if(todosClientes.isEmpty()){
-                 System.out.println("Nenhun cliente encontrado");
-             }else{
-                 todosClientes.forEach(System.out::println);
-             }
+//             System.out.println("Atualizando todos os clientes");
+//             todosClientes.forEach(c -> {
+//                 c.setNome(c.getNome()+" Atualizado");
+//                 clientesRepository.atualizar(c);
+//             });
+//
+//             todosClientes = clientesRepository.obterTodos();
+//             todosClientes.forEach(System.out::println);
+//
+//             System.out.println("Buscando cliente por nome");
+//             clientesRepository.buscarPorNome("cli").forEach(System.out::println);
+//
+//             System.out.println("Deletar clientes");
+//             clientesRepository.obterTodos().forEach(c -> {
+//                 clientesRepository.deletar(c);
+//             });
+//
+//             todosClientes = clientesRepository.obterTodos();
+//             if(todosClientes.isEmpty()){
+//                 System.out.println("Nenhun cliente encontrado");
+//             }else{
+//                 todosClientes.forEach(System.out::println);
+//             }
 
          };
      }
